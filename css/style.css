@@ -1,0 +1,308 @@
+/* Desktop only */
+@media only screen and (min-width: 768px) {
+    #why-background {
+        background: linear-gradient(to left, #f2f2f2 50%, #ffffff 50%);
+    }
+
+    .why-content-left {
+        padding-right: 2em;
+    }
+
+    .why-content-right {
+        padding-left: 2em;
+    }
+
+    #blood-cell-blurred-left {
+        height: 200px;
+        position: absolute;
+        left: 0;
+        width: 35vw;
+        height: 35vw;
+        background-position-x: -200px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../img/bloodCELLBLURRED.png);
+        z-index: 1900;
+    }
+
+    #blood-cell-blurred-right {
+        position: absolute;
+        right: -200px;
+        width: 35vw;
+        z-index: 1900;
+    }
+
+    body {
+        overflow: hidden;
+    }
+}
+
+/* Mobile only  */
+@media only screen and (max-width: 768px) {
+    #why-background {
+        padding: 0;
+    }
+
+    #blood-cell-blurred-left {
+        display: none;
+    }
+
+    #blood-cell-blurred-right {
+        display: none;
+    }
+}
+
+body {
+    direction: rtl;
+    font-family: 'Assistant', sans-serif;
+}
+
+#siteLOGO {
+    height: 32px;
+    width: 50px;
+    background-image: url(../img/siteLOGO.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#footer {
+    padding: 20em 0;
+}
+
+#map {
+    height: 100%;
+
+}
+
+#hitLOGO {
+    height: 150px;
+    width: 150px;
+    background-image: url(../img/hitLOGO.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+}
+
+#main-background {
+    background-image: url(../img/bcellsMAIN.png);
+    background-size: cover;
+    background-position-y: 70px;
+    background-repeat: no-repeat;
+}
+
+#chevron {
+    content: "";
+    display: inline-block;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: 80px;
+}
+
+#blood-line {
+    height: 34em;
+    background: #E03153;
+    bottom: 0;
+    margin-bottom: -30em;
+    width: 2px;
+    z-index: 1;
+    position: absolute;
+}
+
+#blood-line:before {
+    content: "";
+    display: inline-block;
+    border-right: 2px solid #E03153;
+    border-bottom: 2px solid #E03153;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -17px;
+    right: -6.5px;
+}
+
+#blood-line:after {
+    content: "";
+    background-image: url(../img/bloodVIAL.png);
+    bottom: -38px;
+    width: 15px;
+    height: 40px;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -7px;
+}
+
+.blood-cell-right {
+    width: 12vw;
+    height: 20%;
+    position: absolute;
+    background-position-x: 114px;
+    z-index: 99;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 0;
+    background-image: url(../img/bloodCELL4.png);
+}
+
+.blood-cell-left {
+    width: 12vw;
+    height: 100%;
+    position: absolute;
+    background-position-x: -114px;
+    background-position-y: 730px;
+    z-index: 99;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    background-image: url(../img/bloodCELL3.png);
+}
+
+
+
+
+/*Time Table Charts*/
+
+#price {
+    text-align: center;
+}
+
+.plan-inner {
+    background: #fff;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.entry-title {
+    background: #061F3E;
+    height: 165px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.entry-title .price {
+    position: absolute;
+    background: #061F3E;
+    top: 20px;
+    height: 95px;
+    width: 95px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 5px solid #fff;
+    line-height: 80px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.plan span {
+    position: absolute;
+    font-size: 25px;
+    margin: 120px -48px;
+    font-weight: 700;
+}
+
+.entry-content {
+    color: #323232;
+}
+
+.entry-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.entry-content li {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 10px 0;
+}
+
+.entry-content li:last-child {
+    border: none;
+    padding-bottom: 30px;
+}
+
+.entry-content .no-border {
+    border: none;
+}
+
+
+.basic .entry-title {
+    background: #133765;
+}
+
+
+.basic .price {
+    background: #133765;
+}
+
+.standard .entry-title {
+    background: #164887;
+}
+
+
+.standard .price {
+    background: #164887;
+}
+
+
+/** Icons for the bullets **/
+
+.bullet-icons {
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+
+#toy {
+    background-image: url(../img/bear.png);
+}
+
+#puzzle {
+    background-image: url(../img/puzzle.png);
+}
+
+#ball {
+    background-image: url(../img/ball.png);
+}
+
+#hat {
+    background-image: url(../img/hard-hat.png);
+}
+
+#headphones {
+    background-image: url(../img/headphones.png);
+}
+
+#paste {
+    background-image: url(../img/paste.png);
+}
+
+#turn {
+    background-image: url(../img/look.png);
+}
+
+#distress {
+    background-image: url(../img/distress.png);
+}

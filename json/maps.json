@@ -1,0 +1,9 @@
+{
+    "mapsetting": {
+        "lat": 23.8701334,
+        "lng": 90.2713944,
+        "zoom": 10,
+        "radius": 3000,
+        "type": "hospital"
+    }
+}
